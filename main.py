@@ -1,4 +1,3 @@
-print ("hello world")
 import random 
 choices = ["rock", "paper", "scissors"]
 print("rock crushes scissors, scissors cuts paper, paper covers rock")
