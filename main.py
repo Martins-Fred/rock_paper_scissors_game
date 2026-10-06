@@ -1,23 +1,31 @@
-import random 
+#RockPaperScissors.py
+import random
 choices = ["rock", "paper", "scissors"]
-print("rock crushes scissors, scissors cuts paper, paper covers rock")
-
-while True:
-    player = input("do you want to be rock, scissors, paper (or quit)? ")
- 
-    if player not in choices:
-        print("invalid choice, please choose rock, paper, or scissors.")
-    if player == "quit":
-        print("you quit the game.")
-        break
-    if player == "rock":
-        print("it's a tie!")
-        continue
-    if player == ("paper"):
-        print("it's a tie!") 
-        continue   
-    elif player == ("scissors"):
-        print("you lose!") 
-        continue
-else:
-    print("you win!") 
+print("Rock crushes scissors. Scissors cut paper. Paper covers rock.")
+player = input("Do you want to be rock, paper, or scissors (or quit)? ").strip().lower()
+while player != "quit":                 # Keep playing until the user quits
+    if player not in choices:           # Check for bad input before the computer plays
+        print("Invalid choice, please type rock, paper, scissors, or quit.")
+    else:
+        computer = random.choice(choices)   # Pick one of the items in choices
+        print("You chose " + player + ", and the computer chose " + computer + ".")
+        if player == computer:
+            print("It's a tie!")
+        elif player == "rock":
+            if computer == "scissors":
+                print("You win!")
+            else:
+                print("Computer wins!")
+        elif player == "paper":
+            if computer == "rock":
+                print("You win!")
+            else:
+                print("Computer wins!")
+        elif player == "scissors":
+            if computer == "paper":
+                print("You win!")
+            else:
+                print("Computer wins!")
+    print()                             # Skip a line
+    player = input("Do you want to be rock, paper, or scissors (or quit)? ").strip().lower()
+print("Thanks for playing!")
