@@ -4,7 +4,7 @@ A command-line Rock, Paper, Scissors game in Python, played against the computer
 
 ## About this project
 
-I'm learning Python from scratch. I wrote the first version during private tutoring. Later I used Claude (an AI assistant) to fix some bugs and improve it. The first version is still in this repository's commit history.
+I'm learning Python from scratch. I wrote the first version during private tutoring. Later I used Claude (an AI assistant LLM) to fix some bugs and improve it. The first version is still in this repository's commit history.
 
 ## What I practiced
 
