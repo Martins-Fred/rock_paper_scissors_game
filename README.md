@@ -25,8 +25,3 @@ I'm learning Python from scratch. I wrote the first version during private tutor
 You need Python 3 installed. In a terminal, run:
 
     python main.py
-
-## Next steps
-
-- Add a score counter
-- Add a best-of-three mode, written by myselfgit
